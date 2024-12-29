@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>IP Address Tracker</h1>
+            <div>
+                <input type="text" id="ipInput" placeholder="Search for any IP address or domain "><button id="submitBtn">
+                    <img src="icon-arrow.svg" alt="">
+                </button>
+            </div>
+           
+        </header>
+     
+         <section>
+            <div class="ip-address-box">
+                <span>IP ADDRESS</span>
+                <p id="ip-adress-result">192.168.0:33055</p>
+            </div>
+            <div class="ip-address-box">
+                <span>LOCATION</span>
+                <p id="ip-adress-City">Brooklyn. NY,10001</p>
+            </div>
+            <div class="ip-address-box">
+                <span>TIMEZONE</span>
+                <p id="ip-adress-timezone">UTC-05:00</p>
+            </div>
+            <div class="ip-address-box">
+                <span>ISP</span>
+                <p id="ip-adress-Company">SpaceX Starlink</p>
+            </div>
+        </section> 
+        <main id="map"></main>
+   
+  
+    </div>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+    <script src='main.js'></script>
+</body>
+</html>
